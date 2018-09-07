@@ -6,10 +6,14 @@ namespace Syy.Manager
 {
     public class Managers : MonoBehaviour
     {
-        static GameManager Game;
+        public static GameManager Game;
+        public static UIManager UI;
+        public static AudioManager Audio;
         void Awake()
         {
             Game = GetComponent<GameManager>();
+            UI = GetComponent<UIManager>();
+            Audio = GetComponent<AudioManager>();
             DontDestroyOnLoad(gameObject);
         }
     }
