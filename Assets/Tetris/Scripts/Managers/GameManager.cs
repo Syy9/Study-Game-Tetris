@@ -1,13 +1,19 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 using Syy.State;
-using UnityEngine;
+using Syy.Data;
+using Syy.Shape;
 
 namespace Syy.Manager {
 
     public class GameManager : MonoBehaviour
     {
         public bool isGameActive;
+        public TetrisShape currentShape;
+        public Transform blockHolder;
+        public PlayerStats stats;
+
         private StateBase currentState;
 
         void Awake()
