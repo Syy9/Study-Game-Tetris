@@ -17,7 +17,7 @@ namespace Syy.Manager
         [SerializeField] MainMenu mainMenu;
         [SerializeField] InGameUI inGameUI;
         [SerializeField] PopUp popUp;
-        [SerializeField] GameObject activePopUp;
+        [SerializeField] public GameObject activePopUp;
         [SerializeField] GameObject panel;
 
         public void ActivateUI(Menus menuType)

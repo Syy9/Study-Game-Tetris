@@ -15,21 +15,21 @@ namespace Syy.UI
         {
             gameOverPopUp.transform.parent.gameObject.SetActive(true);
             gameOverPopUp.SetActive(true);
-            Managers.UI.activePopup = gameOverPopUp;
+            Managers.UI.activePopUp = gameOverPopUp;
         }
 
         public void ActivateSettingsPopUp()
         {
             settingsPopUp.transform.parent.gameObject.SetActive(true);
             settingsPopUp.SetActive(true);
-            Managers.UI.activatePopup = settingsPopUp;
+            Managers.UI.activePopUp = settingsPopUp;
         }
 
         public void ActivatePlayerStatsPopUp()
         {
             playerStatsPopUp.transform.parent.gameObject.SetActive(true);
             playerStatsPopUp.SetActive(true);
-            Managers.UI.activatePopUp = playerStatsPopUp;
+            Managers.UI.activePopUp = playerStatsPopUp;
         }
     }
 
