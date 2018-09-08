@@ -15,7 +15,7 @@ namespace Syy.Manager
     public class UIManager : MonoBehaviour
     {
         [SerializeField] MainMenu mainMenu;
-        [SerializeField] InGameUI inGameUI;
+        [SerializeField] public InGameUI inGameUI;
         [SerializeField] PopUp popUp;
         [SerializeField] public GameObject activePopUp;
         [SerializeField] GameObject panel;
