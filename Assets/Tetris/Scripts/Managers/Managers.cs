@@ -9,11 +9,21 @@ namespace Syy.Manager
         public static GameManager Game;
         public static UIManager UI;
         public static AudioManager Audio;
+        public static ColorManager Color;
+        public static CameraManager Camera;
+        public static GridManager Grid;
+        public static ScoreManager Score;
+        public static SpawnManager Spawner;
         void Awake()
         {
             Game = GetComponent<GameManager>();
             UI = GetComponent<UIManager>();
             Audio = GetComponent<AudioManager>();
+            Color = GetComponent<ColorManager>();
+            Camera = GetComponent<CameraManager>();
+            Grid = GetComponent<GridManager>();
+            Score = GetComponent<ScoreManager>();
+            Spawner = GetComponent<SpawnManager>();
             DontDestroyOnLoad(gameObject);
         }
     }
