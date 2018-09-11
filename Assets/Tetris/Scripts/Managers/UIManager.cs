@@ -77,7 +77,7 @@ namespace Syy.Manager
                 !RectTransformUtility.RectangleContainsScreenPoint(
                     outsidePanel.GetComponent<RectTransform>(),
                     Input.mousePosition,
-                    Camera.main
+                    UnityEngine.Camera.main
                 ))
                 {
                     outsidePanel.SetActive(false);
