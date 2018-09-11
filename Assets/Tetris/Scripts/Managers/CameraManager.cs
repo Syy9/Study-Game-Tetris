@@ -6,7 +6,7 @@ namespace Syy.Manager
 {
     public class CameraManager : MonoBehaviour
     {
-        public Camera main;
+        public UnityEngine.Camera main;
         float _mainMenuSize = 13.5f;
         float _inGameSize = 11f;
         [HideInInspector] public CameraShake _shaker;
@@ -23,7 +23,7 @@ namespace Syy.Manager
                     StartCoroutine(StartGamePlay());
                 });
             } else {
-                Manager.SpawnManager.Spawn();
+                Managers.Spawner.Spawn();
                 Managers.Game.isGameActive = true;
             }
         }
