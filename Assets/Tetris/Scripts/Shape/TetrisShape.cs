@@ -30,7 +30,7 @@ namespace Syy.Shape
 
         void Start()
         {
-            if(!Managers.Grid.InValidGridPosition(this.transform))
+            if(!Managers.Grid.IsValidGridPosition(this.transform))
             {
                 Managers.Game.SetState(GameOverState);
                 Destroy(this.gameObject);
