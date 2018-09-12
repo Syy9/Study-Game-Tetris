@@ -14,6 +14,7 @@ namespace Syy.Manager
         public static GridManager Grid;
         public static ScoreManager Score;
         public static SpawnManager Spawner;
+        public static PlayerInputManager Input;
         void Awake()
         {
             Game = GetComponent<GameManager>();
@@ -24,6 +25,7 @@ namespace Syy.Manager
             Grid = GetComponent<GridManager>();
             Score = GetComponent<ScoreManager>();
             Spawner = GetComponent<SpawnManager>();
+            Input = GetComponent<PlayerInputManager>();
             DontDestroyOnLoad(gameObject);
         }
     }
